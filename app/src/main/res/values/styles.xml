@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorGrey</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+    <style name="TextInputLayoutStyle.NoStroke" parent="TextInputLayoutStyle" >
+        <item name="boxStrokeColor">@color/text_input_box_stroke_equation</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+    <!-- TextViews -->
+    <style name="TextView_Regular">
+        <item name="android:fontFamily">@font/core_sans_cr_45_regular</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textSize">@dimen/txt_font_size_header_14</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TextView_Medium" parent="TextView_Regular">
+        <item name="android:fontFamily">@font/core_sans_cr_55_medium</item>
+    </style>
+
+    <style name="TextView_Medium_Bold" parent="TextView_Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="Button_Big" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:fontFamily">@font/core_sans_cr_55_medium</item>
+        <item name="iconSize">@dimen/btn_font_size_small_14</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">10dp</item>
+        <item name="android:paddingEnd">19dp</item>
+        <item name="android:paddingStart">19dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/btn_font_size_small_14</item>
+        <item name="android:background">@drawable/ripple_btn_primary_selector</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="Button_Normal" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:fontFamily">@font/core_sans_cr_55_medium</item>
+        <item name="iconSize">@dimen/btn_font_size_small_14</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">10dp</item>
+        <item name="android:paddingEnd">19dp</item>
+        <item name="android:paddingStart">19dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alpha">0.25</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/btn_font_size_small_14</item>
+        <item name="android:background">@drawable/ripple_btn_primary_selector</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="Button_Borderless" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:fontFamily">@font/core_sans_cr_55_medium</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:textSize">@dimen/btn_font_size_small_14</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <!-- TextInputLayouts -->
+    <style name="TextInputLayoutStyle_2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- TextEditInputs -->
+    <style name="TextEditInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/core_sans_cr_55_medium</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textColorHint">@color/colorTextLightPurple</item>
+        <item name="android:textSize">@dimen/txt_font_size_header_16</item>
+    </style>
+
+    <style name="Widget.MyApp.Snackbar" parent="@style/Widget.MaterialComponents.Snackbar">
+        <!-- Custom margin -->
+        <item name="android:layout_margin">0dp</item>
+        <!-- Custom padding -->
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="TextEditInputStyle.ErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/core_sans_cr_55_medium</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="RadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorTextWhite</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+</resources>

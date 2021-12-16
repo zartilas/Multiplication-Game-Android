@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.MultiplicationGame" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorWhiteLight</item>
+        <item name="colorOnBackground">@color/colorWhite</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorButton</item>
+        <item name="colorOnSecondary">@color/colorWhiteLight</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorBg3</item>
+        <item name="android:navigationBarColor">@color/colorNavigationBar</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="colorError">@color/colorSnackBarErrorBg</item>
+        <item name="snackbarStyle">@style/Widget.MyApp.Snackbar</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Theme.MultiplicationGame.Splash">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Theme.MultiplicationGame.Main">
+        <item name="android:navigationBarColor">@color/colorContainer</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorBg1</item>
+    </style>
+</resources>

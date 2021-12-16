@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:gravity="center"
+    tools:ignore="ContentDescription">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView_Body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_container_all_corners"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgView_Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_exit_colored"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView_Header"
+                    style="@style/TextView_Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAlignment="center"
+                    android:text="@string/txt_exit_confirmation"
+                    android:textSize="@dimen/txt_font_size_header_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgView_Icon" />
+
+                <TextView
+                    android:id="@+id/textView_Body"
+                    style="@style/TextView_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:justificationMode="inter_word"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextGreyLight"
+                    android:textSize="24sp"
+                    android:text="@string/txt_exit_confirmation_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_Header" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Dismiss"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="29dp"
+                    android:text="@string/txt_dismiss"
+                    android:textColor="@color/colorBg1"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_Yes"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="@+id/textView_Body"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_Body" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Yes"
+                    style="@style/Button_Big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/btn_height_small_37"
+                    android:text="@string/txt_yes"
+                    app:backgroundTint="@null"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_Dismiss"
+                    app:layout_constraintEnd_toEndOf="@+id/textView_Body"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn_Dismiss"
+                    app:layout_constraintTop_toTopOf="@+id/btn_Dismiss" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

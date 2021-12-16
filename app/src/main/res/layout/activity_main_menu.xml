@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ui.activities.MainMenuActivity"
+    tools:ignore="ContentDescription">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView_Body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_Header"
+                    style="@style/TextView_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/txt_welcome"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="46dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_abacus" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Learn"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/ripple_btn_primary_selector"
+                    android:fontFamily="@font/core_sans_cr_65_bold"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/txt_learn"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32sp"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/ic_book_and_info"
+                    app:iconGravity="textStart"
+                    app:iconPadding="12dp"
+                    app:iconSize="32dp"
+                    app:iconTint="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_Header" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Start_Test"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/ripple_btn_primary_selector"
+                    android:fontFamily="@font/core_sans_cr_65_bold"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/txt_start_test"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32sp"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/ic_test"
+                    app:iconGravity="textStart"
+                    app:iconPadding="12dp"
+                    app:iconSize="32dp"
+                    app:iconTint="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_Learn" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Tables"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/ripple_btn_primary_selector"
+                    android:fontFamily="@font/core_sans_cr_65_bold"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/txt_tables"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32sp"
+                    app:backgroundTint="@null"
+                    app:iconGravity="textStart"
+                    app:icon="@drawable/ic_table"
+                    app:iconPadding="12dp"
+                    app:iconSize="32dp"
+                    app:iconTint="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_Start_Test" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Logs"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="46dp"
+                    android:background="@drawable/ripple_btn_primary_selector"
+                    android:fontFamily="@font/core_sans_cr_65_bold"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/txt_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32sp"
+                    app:backgroundTint="@null"
+                    app:icon="@drawable/ic_history"
+                    app:iconGravity="textStart"
+                    app:iconPadding="12dp"
+                    app:iconSize="32dp"
+                    app:iconTint="@color/colorWhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_Tables" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_container_bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBtn_Profile"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:soundEffectsEnabled="false"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ripple_btn_oval_selector"
+            android:clickable="true"
+            android:padding="8dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_user"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtn_Help"
+            app:layout_constraintEnd_toStartOf="@+id/imgBtn_Help"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgBtn_Help"
+            app:tint="@color/colorWhiteLight" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_Help"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ripple_btn_oval_selector"
+            android:clickable="true"
+            android:padding="8dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitCenter"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/ic_questions"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBtn_Profile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorWhiteLight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
